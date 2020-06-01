@@ -1,2 +1,2 @@
-Make CP/M with FPGA
+Make DOS with FPGA
 
