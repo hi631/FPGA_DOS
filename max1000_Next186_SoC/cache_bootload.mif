@@ -1,0 +1,190 @@
+-- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, the Altera Quartus Prime License Agreement,
+-- the Altera MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Altera and sold by Altera or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=4096;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0000  :   C88CFCFA;
+	0001  :   C08ED88E;
+	0002  :   00BCD08E;
+	0003  :   E7C033FC;
+	0004  :   E70BB080;
+	0005  :   E70FB08B;
+	0006  :   E634B08F;
+	0007  :   E6C03243;
+	0008  :   E840E640;
+	0009  :   C0850163;
+	000A  :   D08B3A74;
+	000B  :   C106EAC1;
+	000C  :   10B90AE0;
+	000D  :   83C12B00;
+	000E  :   DB3300DA;
+	000F  :   E8515250;
+	0010  :   5949010D;
+	0011  :   1C75585A;
+	0012  :   8301C083;
+	0013  :   C38100D2;
+	0014  :   E8E20200;
+	0015  :   00003E81;
+	0016  :   0875654E;
+	0017  :   00023E81;
+	0018  :   72747478;
+	0019  :   B003C0BA;
+	001A  :   08B0EE10;
+	001B  :   03D4BAEE;
+	001C  :   42EE0AB0;
+	001D  :   4AEE20B0;
+	001E  :   42EE0CB0;
+	001F  :   4AEE00B0;
+	0020  :   42EE0DB0;
+	0021  :   68EE00B0;
+	0022  :   3307B800;
+	0023  :   07D0B9FF;
+	0024  :   ABF3C033;
+	0025  :   B803C8BA;
+	0026  :   42EE0101;
+	0027  :   EEEE2AB0;
+	0028  :   BEFF33EE;
+	0029  :   ABACFE0F;
+	002A  :   75C084AC;
+	002B  :   4000BBFA;
+	002C  :   EB83078A;
+	002D  :   BEF97540;
+	002E  :   34E80100;
+	002F  :   E8FC8A00;
+	0030  :   DC8A002F;
+	0031  :   88002AE8;
+	0032  :   754B4624;
+	0033  :   8EE433F7;
+	0034  :   0100EAD4;
+	0035  :   EABEF000;
+	0036  :   B9FB8BFC;
+	0037  :   A4F30007;
+	0038  :   33E000BF;
+	0039  :   1000B9F6;
+	003A  :   A5F3E3FF;
+	003B  :   FF0000EA;
+	003C  :   BA80B4FF;
+	003D  :   52B903DA;
+	003E  :   E8C0ECFA;
+	003F  :   E4FA7202;
+	0040  :   E4E80240;
+	0041  :   0008E840;
+	0042  :   02E8C0EC;
+	0043  :   F573DCD0;
+	0044  :   0A5BE981;
+	0045  :   E83840E4;
+	0046  :   F87540E4;
+	0047  :   B4FFB0C3;
+	0048  :   C003EE01;
+	0049  :   C3EDFB73;
+	004A  :   FFF3E8AC;
+	004B  :   E8C3FAE2;
+	004C  :   2588FFEB;
+	004D  :   C3F8E247;
+	004E  :   B9FFE2E8;
+	004F  :   E7E80006;
+	0050  :   E8F633FF;
+	0051  :   7446FFD7;
+	0052  :   FFFC8005;
+	0053  :   50C3F574;
+	0054  :   B250C28A;
+	0055  :   F48B5251;
+	0056  :   B403DABA;
+	0057  :   44C6EF01;
+	0058  :   D6E8FF05;
+	0059  :   06C483FF;
+	005A  :   1675E40A;
+	005B  :   80FFD2E8;
+	005C  :   0E75FEFC;
+	005D  :   FB8B02B5;
+	005E  :   E8FFB4E8;
+	005F  :   9CE8FF9F;
+	0060  :   C03341FF;
+	0061  :   FF95E8EF;
+	0062  :   03DABAC3;
+	0063  :   E8000AB9;
+	0064  :   FBE2FF8B;
+	0065  :   BEEF01B4;
+	0066  :   9EE8FE5F;
+	0067  :   75CCFEFF;
+	0068  :   FE65BE65;
+	0069  :   FEFF91E8;
+	006A  :   B15B75CC;
+	006B  :   8BE12B04;
+	006C  :   FF7BE8FC;
+	006D  :   FC805858;
+	006E  :   BE4B75AA;
+	006F  :   77E8FE77;
+	0070  :   FF59E8FF;
+	0071  :   E8FE71BE;
+	0072  :   CCFEFF71;
+	0073  :   7DBEED74;
+	0074  :   FF64E8FE;
+	0075  :   E12B04B1;
+	0076  :   52E8FC8B;
+	0077  :   40A858FF;
+	0078  :   BE237458;
+	0079  :   4FE8FE6B;
+	007A  :   75E40AFF;
+	007B  :   FF51E819;
+	007C  :   75FEFC80;
+	007D  :   2B12B111;
+	007E  :   E8FC8BE1;
+	007F  :   4D8BFF31;
+	0080  :   41CD86F6;
+	0081  :   C033E78B;
+	0082  :   FF11E8EF;
+	0083  :   42C3C18B;
+	0084  :   20534F49;
+	0085  :   20746F6E;
+	0086  :   73657270;
+	0087  :   20746E65;
+	0088  :   53206E6F;
+	0089  :   72614344;
+	008A  :   616C2064;
+	008B  :   38207473;
+	008C  :   202C424B;
+	008D  :   74696177;
+	008E  :   20676E69;
+	008F  :   52206E6F;
+	0090  :   32333253;
+	0091  :   31312820;
+	0092  :   30303235;
+	0093  :   2C737062;
+	0094  :   30306620;
+	0095  :   30313A30;
+	0096  :   2E202930;
+	0097  :   40002E2E;
+	0098  :   00000000;
+	0099  :   00004895;
+	009A  :   4987AA01;
+	009B  :   00000000;
+	009C  :   004069FF;
+	009D  :   77FF0000;
+	009E  :   00000000;
+	009F  :   00007AFF;
+	00A0  :   00FF0000;
+	[00A1..00FB]  :   00000000;
+	00FC  :   00FC00EA;
+	00FD  :   000000F0;
+	[00FE..0FFF]  :   00000000;
+END;

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\kitahard\LX9_Mini\Next186_SoC\work\lx9_Next186Soc.ncd
+OUTFILE=C:\kitahard\LX9_Mini\Next186_SoC\work\lx9_Next186Soc.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\kitahard\LX9_Mini\Next186_SoC\work
+LICENSE=WebPack
+USER_INFO=135256_15690819_173552794_661
