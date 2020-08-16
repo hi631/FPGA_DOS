@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=C:\kitahard\LX9_Mini\Next186_SoC\work\impact.xsl
-OUTFILE=C:\kitahard\LX9_Mini\Next186_SoC\work\impact.xsl
-FAMILY=Single
-PART=Single
-WORKINGDIR=C:\kitahard\LX9_Mini\Next186_SoC\work
-LICENSE=iMPACT
-USER_INFO=iMPACT

@@ -1,8 +1,0 @@
-Storage Target: SPI Flash Single FPGA
-16M
-FF
-Microcomputer
-C:/kitahard/lx9_sb/CPM80/work
-
-MCS
-No
