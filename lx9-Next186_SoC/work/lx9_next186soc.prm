@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\kitahard\LX9_Mini\Next186_SoC\work\//lx9_next186soc -s 8192 -u 0 C:\kitahard\lx9_sb\Next186_SoC\work\lx9_next186soc.bit -spi 
+
+PROM C:\kitahard\LX9_Mini\Next186_SoC\work\lx9_next186soc.prm map: SAT 4 JUL 21:6:46 2020
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          8192K
+PROM start    0000:0000
+PROM end      007f:ffff
+PROM checksum 7af3ee2f
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:36cf     Jul 04 20:46:55 2020 C:/kitahard/lx9_sb/Next186_SoC/work/lx9_next186soc.bit

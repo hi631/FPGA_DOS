@@ -1,0 +1,103 @@
+## Prohibit the automatic placement of pins that are connected to VCC or GND for configuration.
+#CONFIG PROHIBIT=P144;
+#CONFIG PROHIBIT=P69;
+#CONFIG PROHIBIT=P60;
+
+NET CLK_50M 	LOC = P50  | IOSTANDARD = LVTTL | PERIOD=20ns;
+NET BTN_RES 	LOC = P132 | IOSTANDARD = LVTTL | PULLDOWN;
+//NET BTN(0) 		LOC = P132  | IOSTANDARD = LVTTL | PULLDOWN;
+//NET BTN(1) 		LOC = P131  | IOSTANDARD = LVTTL | PULLDOWN;
+
+NET LED(0)      LOC="P138" | IOSTANDARD=LVTTL;                                # C8
+NET LED(1)      LOC="P137" | IOSTANDARD=LVTTL;                                # C9
+NET LED(2)      LOC="P134" | IOSTANDARD=LVTTL;                                # C10
+NET LED(3)      LOC="P133" | IOSTANDARD=LVTTL;                                # C11
+NET LED(4)      LOC="P120" | IOSTANDARD=LVTTL;                                # C8
+NET LED(5)      LOC="P119" | IOSTANDARD=LVTTL;                                # C9
+NET LED(6)      LOC="P118" | IOSTANDARD=LVTTL;                                # C10
+NET LED(7)      LOC="P117" | IOSTANDARD=LVTTL;                                # C11
+
+NET RX     	LOC = "P47"  | IOSTANDARD = LVTTL;               # "USB_RS232_RXD"
+NET TX     	LOC = "P46"  | IOSTANDARD = LVTTL;               # "USB_RS232_TXD"
+
+#SD-CARD 1:DAT2 2:CS 3:CMD 4:VDD 5:SCK 6:VSS 7:DAT0(+pu)
+NET SD_nCS		LOC="P74"   | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # FLASH_CS
+NET SD_CK    	LOC="P66"   | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # FLASH_CK
+NET SD_DI    	LOC="P75"   | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # FLASH_SI(CMD)
+NET SD_DO		LOC="P67"   | IOSTANDARD=LVTTL | DRIVE=8 | PULLUP; # FLASH_SO(DATA0)
+
+# PS/2 keyboard  1;ps2_data 3:GND 4:VCC 5:ps2_clk 
+NET PS2CLKA		LOC = "P6"  | IOSTANDARD=LVTTL |DRIVE=8 |SLEW=SLOW | PULLUP;                    # A5
+NET PS2DATA		LOC = "P7"  | IOSTANDARD=LVTTL |DRIVE=8 |SLEW=SLOW | PULLUP;                    # A6
+
+NET "VGA_R<2>" LOC = "P17" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#C14 - 8K
+NET "VGA_R<1>" LOC = "P22" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#C14 - 8K
+NET "VGA_R<0>" LOC = "P24" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#C12 - 16K
+NET "VGA_G<2>" LOC = "P27" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#B4  - 4K
+NET "VGA_G<1>" LOC = "P30" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#B13 - 8K
+NET "VGA_G<0>" LOC = "P33" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#B12 - 16K
+NET "VGA_B<1>" LOC = "P35" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#B15 - 8K
+NET "VGA_B<0>" LOC = "P41" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#B14 - 16K
+NET "VGA_HSYNC" 	LOC = "P44" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#C3  - 75
+NET "VGA_VSYNC" 	LOC = "P45" 	| IOSTANDARD=LVTTL |DRIVE = 8 |SLEW = FAST ;	#C2  - 75
+
+NET SDRAM_ADDR(0)  LOC="P40" 	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR0
+NET SDRAM_ADDR(1)  LOC="P43"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR1
+NET SDRAM_ADDR(2)  LOC="P78"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR2
+NET SDRAM_ADDR(3)  LOC="P79"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR3
+NET SDRAM_ADDR(4)  LOC="P81"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR4
+NET SDRAM_ADDR(5)  LOC="P80"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR5
+NET SDRAM_ADDR(6)  LOC="P83"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR6
+NET SDRAM_ADDR(7)  LOC="P82"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR7
+NET SDRAM_ADDR(8)  LOC="P85"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR8
+NET SDRAM_ADDR(9)  LOC="P84"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR9
+NET SDRAM_ADDR(10) LOC="P34" 	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR10
+NET SDRAM_ADDR(11) LOC="P88"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR11
+NET SDRAM_ADDR(12) LOC="P87"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR12
+NET SDRAM_DATA(0)  LOC="P111" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA0
+NET SDRAM_DATA(1)  LOC="P112" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA1
+NET SDRAM_DATA(2)  LOC="P9" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA2
+NET SDRAM_DATA(3)  LOC="P8" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA3
+NET SDRAM_DATA(4)  LOC="P11" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA4
+NET SDRAM_DATA(5)  LOC="P10" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA5
+NET SDRAM_DATA(6)  LOC="P14" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA6
+NET SDRAM_DATA(7)  LOC="P12" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA7
+NET SDRAM_DATA(8)  LOC="P98"  	| IOSTANDARD=LVTTL;                                # SDRAM_DATA8
+NET SDRAM_DATA(9)  LOC="P97"  	| IOSTANDARD=LVTTL;                                # SDRAM_DATA9
+NET SDRAM_DATA(10) LOC="P100" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA10
+NET SDRAM_DATA(11) LOC="P99"  	| IOSTANDARD=LVTTL;                                # SDRAM_DATA11
+NET SDRAM_DATA(12) LOC="P102" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA12
+NET SDRAM_DATA(13) LOC="P101" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA13
+NET SDRAM_DATA(14) LOC="P105" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA14
+NET SDRAM_DATA(15) LOC="P104" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA15
+NET SDRAM_DQML     LOC="P16" 	| IOSTANDARD=LVTTL;                                # SDRAM_DQML
+NET SDRAM_DQMH     LOC="P95"  	| IOSTANDARD=LVTTL;                                # SDRAM_DQMH
+NET SDRAM_BA(0)    LOC="P29" 	| IOSTANDARD=LVTTL;                                # SDRAM_BA0
+NET SDRAM_BA(1)    LOC="P32" 	| IOSTANDARD=LVTTL;                                # SDRAM_BA1
+NET SDRAM_nWE      LOC="P15" 	| IOSTANDARD=LVTTL;                                # SDRAM_nWE
+NET SDRAM_nCAS     LOC="P21" 	| IOSTANDARD=LVTTL;                                # SDRAM_nCAS
+NET SDRAM_nRAS     LOC="P23" 	| IOSTANDARD=LVTTL;                                # SDRAM_nRAS
+NET SDRAM_nCS      LOC="P26" 	| IOSTANDARD=LVTTL;                                # SDRAM_CS
+NET SDRAM_CLK      LOC="P92"  	| IOSTANDARD=LVTTL;                                # SDRAM_CLK
+NET SDRAM_CKE      LOC="P93"  	| IOSTANDARD=LVTTL;                                # SDRAM_CKE
+
+###############################################################
+#Created by Constraints Editor (xc6slx9-tqg144-2) - 2015/06/25
+TIMESPEC TS_TIGx0 = FROM "sys_inst_dcm_cpu_inst_clkfx" TO "sys_inst_dcm_system_clkout0" TIG;
+TIMESPEC TS_TIGx1 = FROM "sys_inst_dcm_cpu_inst_clkfx" TO "sys_inst_dcm_system_clkout1" TIG;
+TIMESPEC TS_TIGx3 = FROM "sys_inst_dcm_cpu_inst_clkfx" TO "sys_inst_dcm_system_clkout3" TIG;
+TIMESPEC TS_TIG10 = FROM "sys_inst_dcm_system_clkout1" TO "sys_inst_dcm_system_clkout0" TIG;
+TIMESPEC TS_TIG01 = FROM "sys_inst_dcm_system_clkout0" TO "sys_inst_dcm_system_clkout1" TIG;
+TIMESPEC TS_TIG1x = FROM "sys_inst_dcm_system_clkout1" TO "sys_inst_dcm_cpu_inst_clkfx" TIG;
+TIMESPEC TS_TIG0x = FROM "sys_inst_dcm_system_clkout0" TO "sys_inst_dcm_cpu_inst_clkfx" TIG;
+TIMESPEC TS_TIG3x = FROM "sys_inst_dcm_system_clkout3" TO "sys_inst_dcm_cpu_inst_clkfx" TIG;
+TIMESPEC TS_TIGx4 = FROM "sys_inst_dcm_cpu_inst_clkfx" TO "sys_inst_dcm_system_clkout4" TIG;
+TIMESPEC TS_TIG4x = FROM "sys_inst_dcm_system_clkout4" TO "sys_inst_dcm_cpu_inst_clkfx" TIG;
+TIMESPEC TS_TIGxy = FROM "sys_inst_dcm_cpu_inst_clkfx" TO "sys_inst_dcm_dsp_inst_clkfx" TIG;
+TIMESPEC TS_TIGyx = FROM "sys_inst_dcm_dsp_inst_clkfx" TO "sys_inst_dcm_cpu_inst_clkfx" TIG;
+
+INST "sys_inst/cpuunit/cpu/*" TNM = TNM_CPU;
+TIMESPEC TS_CE_SLOW = FROM TNM_CPU TS_sys_inst_dcm_cpu_inst_clkfx * 2;
+INST "sys_inst/sc/planarreq" TNM = TNM_PLANAR;
+TIMESPEC TS_TIG1 = FROM TNM_PLANAR TIG;
+
