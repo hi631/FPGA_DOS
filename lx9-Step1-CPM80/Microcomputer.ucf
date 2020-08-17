@@ -1,0 +1,63 @@
+NET clk_50Mi		 LOC="P50"  | IOSTANDARD=LVTTL | PERIOD=20ns;			   # CLK 32MHz
+NET txd1		LOC="P46"  | IOSTANDARD=LVTTL; # FPGA -> USB(USB_RXD)
+NET rxd1		LOC="P47"  | IOSTANDARD=LVTTL; # FPGA <- USB(USB_TXD)
+
+NET BTN(0) 		LOC = P132  | IOSTANDARD = LVTTL | PULLDOWN;
+NET BTN(1) 		LOC = P131  | IOSTANDARD = LVTTL | PULLDOWN;
+
+#SD-CARD 1:DAT2 2:CS 3:CMD 4:VDD 5:SCK 6:VSS 7:DAT0(+pu)
+NET SD_nCS		LOC="P74"   | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # FLASH_CS
+NET SD_CK    	LOC="P66"   | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # FLASH_CK
+NET SD_DI    	LOC="P75"   | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # FLASH_SI(CMD)
+NET SD_DO		LOC="P67"   | IOSTANDARD=LVTTL | DRIVE=8 | PULLUP; # FLASH_SO(DATA0)
+
+NET LED(0)      LOC="P138" | IOSTANDARD=LVTTL;                                # C8
+NET LED(1)      LOC="P137" | IOSTANDARD=LVTTL;                                # C9
+NET LED(2)      LOC="P134" | IOSTANDARD=LVTTL;                                # C10
+NET LED(3)      LOC="P133" | IOSTANDARD=LVTTL;                                # C11
+NET LED(4)      LOC="P120" | IOSTANDARD=LVTTL;                                # C8
+NET LED(5)      LOC="P119" | IOSTANDARD=LVTTL;                                # C9
+NET LED(6)      LOC="P118" | IOSTANDARD=LVTTL;                                # C10
+NET LED(7)      LOC="P117" | IOSTANDARD=LVTTL;                                # C11
+
+NET SDRAM_ADDR(0)  LOC="P40" 	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR0
+NET SDRAM_ADDR(1)  LOC="P43"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR1
+NET SDRAM_ADDR(2)  LOC="P78"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR2
+NET SDRAM_ADDR(3)  LOC="P79"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR3
+NET SDRAM_ADDR(4)  LOC="P81"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR4
+NET SDRAM_ADDR(5)  LOC="P80"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR5
+NET SDRAM_ADDR(6)  LOC="P83"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR6
+NET SDRAM_ADDR(7)  LOC="P82"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR7
+NET SDRAM_ADDR(8)  LOC="P85"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR8
+NET SDRAM_ADDR(9)  LOC="P84"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR9
+NET SDRAM_ADDR(10) LOC="P34" 	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR10
+NET SDRAM_ADDR(11) LOC="P88"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR11
+NET SDRAM_ADDR(12) LOC="P87"  	| IOSTANDARD=LVTTL;                                # SDRAM_ADDR12
+NET SDRAM_DATA(0)  LOC="P111" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA0
+NET SDRAM_DATA(1)  LOC="P112" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA1
+NET SDRAM_DATA(2)  LOC="P9" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA2
+NET SDRAM_DATA(3)  LOC="P8" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA3
+NET SDRAM_DATA(4)  LOC="P11" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA4
+NET SDRAM_DATA(5)  LOC="P10" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA5
+NET SDRAM_DATA(6)  LOC="P14" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA6
+NET SDRAM_DATA(7)  LOC="P12" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA7
+NET SDRAM_DATA(8)  LOC="P98"  	| IOSTANDARD=LVTTL;                                # SDRAM_DATA8
+NET SDRAM_DATA(9)  LOC="P97"  	| IOSTANDARD=LVTTL;                                # SDRAM_DATA9
+NET SDRAM_DATA(10) LOC="P100" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA10
+NET SDRAM_DATA(11) LOC="P99"  	| IOSTANDARD=LVTTL;                                # SDRAM_DATA11
+NET SDRAM_DATA(12) LOC="P102" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA12
+NET SDRAM_DATA(13) LOC="P101" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA13
+NET SDRAM_DATA(14) LOC="P105" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA14
+NET SDRAM_DATA(15) LOC="P104" 	| IOSTANDARD=LVTTL;                                # SDRAM_DATA15
+NET SDRAM_DQML     LOC="P16" 	| IOSTANDARD=LVTTL;                                # SDRAM_DQML
+NET SDRAM_DQMH     LOC="P95"  	| IOSTANDARD=LVTTL;                                # SDRAM_DQMH
+NET SDRAM_BA(0)    LOC="P29" 	| IOSTANDARD=LVTTL;                                # SDRAM_BA0
+NET SDRAM_BA(1)    LOC="P32" 	| IOSTANDARD=LVTTL;                                # SDRAM_BA1
+NET SDRAM_nWE      LOC="P15" 	| IOSTANDARD=LVTTL;                                # SDRAM_nWE
+NET SDRAM_nCAS     LOC="P21" 	| IOSTANDARD=LVTTL;                                # SDRAM_nCAS
+NET SDRAM_nRAS     LOC="P23" 	| IOSTANDARD=LVTTL;                                # SDRAM_nRAS
+NET SDRAM_nCS      LOC="P26" 	| IOSTANDARD=LVTTL;                                # SDRAM_CS
+NET SDRAM_CLK      LOC="P92"  	| IOSTANDARD=LVTTL;                                # SDRAM_CLK
+NET SDRAM_CKE      LOC="P93"  	| IOSTANDARD=LVTTL;                                # SDRAM_CKE
+
+PIN "clkgen/clkout2_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;

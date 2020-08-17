@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\kitahard\LX9_Mini\CPM80\work\Microcomputer.ncd
+OUTFILE=C:\kitahard\LX9_Mini\CPM80\work\Microcomputer.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\kitahard\LX9_Mini\CPM80\work
+LICENSE=WebPack
+USER_INFO=135256_15690819_173552794_661
