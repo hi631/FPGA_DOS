@@ -1,7 +1,7 @@
 Build a DOS machine with FPGA.
 
 
-Move "[next186] (https://opencores.org/projects/next186_soc_pc)" on the board cut by CNC.
+Move "[next186](https://opencores.org/projects/next186_soc_pc)" on the board cut by CNC.
 <br> Even if the software is existing and reliable, there is no guarantee that the hardware will work, so take the following steps.
 <br> Step-1 Connect memory, IO, etc. to a commercially available FPGA (xc6lx9) board, move it with CP / M, and check the hardware operation.
 <br> * Even with CP / M, the main memory is not static but DRAM.
@@ -17,8 +17,9 @@ Move "[next186] (https://opencores.org/projects/next186_soc_pc)" on the board cu
 <br> [PMOD-VGA6] VGA display output. Stick in MAIN-BOARD.
 <br> [lx9-Step1-CPM80] Circuit for operating CP / M (verilog)
 <br> [lx9-Next186_SoC] Circuit for operating DOS (verilog)
+<br>「[SD2G_Dos_F.zip] free MS-DOS SD-image
 
-<br> For details, see "[Qiita] (https://qiita.com/hi631/items/e8e0db06a52938b57632)".
+<br> For details, see "[Qiita](https://qiita.com/hi631/items/e8e0db06a52938b57632)".
 
 
 <br>DOSマシンをFPGAで作る。
@@ -42,5 +43,6 @@ Move "[next186] (https://opencores.org/projects/next186_soc_pc)" on the board cu
 <br><img width="200" alt="Tang-Nano" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/159764/b981d67e-58ef-c116-0807-cbbf22ec1e3a.jpeg">
 <br>　　[lx9-Step1-CPM80]　CP/Mを動作させる為の回路(verilog)
 <br>　　[lx9-Next186_SoC]　DOSを動作させるための回路(verilog)
+<br>「[SD2G_Dos_F.zip](https://github.com/hi631/FPGA_DOS/blob/master/SD2G_Dos_F.zip)　free MS-DOS SDイメージ
 
 <br>詳細は　「[Ｑｉｉｔａ](https://qiita.com/hi631/items/e8e0db06a52938b57632)」を見てください。
