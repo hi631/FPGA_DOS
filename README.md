@@ -28,18 +28,16 @@ Move "[next186](https://opencores.org/projects/next186_soc_pc)" on the board cut
 <br> Just stab the CYC1000 into the breadboard and stab the IO in the same way. Only this.
 <br> IO is a board, but there is no problem with wiring on the board.
 <br> The wiring is the same as "[Board] ", so please refer to that.
-
 <br> #Move with a compact board.
 <br> A compact board with breadboard wiring cut by CNC. That's all.
-<br> [Board made with eagle] 
-
+<br> [Board made with eagle] max1000_eagle
 <br> #soft
 <br> The breadboard and board are the same software.
 <br> However, I just changed the pin layout of next186.
 <br> [Software to write to FPGA] max1000_Next186_SoC
 <br> [Boot disk image] SD2G_Dos_F.zip
 
-<br> For details, see "[Qiita] (https://qiita.com/hi631/items/d948d38c25a411d28f2b)".
+<br> For details, see "[Qiita](https://qiita.com/hi631/items/d948d38c25a411d28f2b)".
 
 
 
