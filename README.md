@@ -21,6 +21,27 @@ Move "[next186](https://opencores.org/projects/next186_soc_pc)" on the board cut
 
 <br> For details, see "[Qiita](https://qiita.com/hi631/items/e8e0db06a52938b57632)".
 
+<br>
+<br> Part 2: I will run DOS using the CYC1000 board (cut-out edition)
+
+<br> #Move on breadboard
+<br> Just stab the CYC1000 into the breadboard and stab the IO in the same way. Only this.
+<br> IO is a board, but there is no problem with wiring on the board.
+<br> The wiring is the same as "[Board] ", so please refer to that.
+
+<br> #Move with a compact board.
+<br> A compact board with breadboard wiring cut by CNC. That's all.
+<br> [Board made with eagle] 
+
+<br> #soft
+<br> The breadboard and board are the same software.
+<br> However, I just changed the pin layout of next186.
+<br> [Software to write to FPGA] max1000_Next186_SoC
+<br> [Boot disk image] SD2G_Dos_F.zip
+
+<br> For details, see "[Qiita] (https://qiita.com/hi631/items/d948d38c25a411d28f2b)".
+
+
 
 <br>DOSマシンをFPGAで作る。
 
@@ -46,3 +67,25 @@ Move "[next186](https://opencores.org/projects/next186_soc_pc)" on the board cut
 <br>「[SD2G_Dos_F.zip](https://github.com/hi631/FPGA_DOS/blob/master/SD2G_Dos_F.zip)　free MS-DOS SDイメージ
 
 <br>詳細は　「[Ｑｉｉｔａ](https://qiita.com/hi631/items/e8e0db06a52938b57632)」を見てください。
+
+
+<br>その２：CYC1000ボードを使ってDOSを動かすぞ(手抜き編)
+　
+<br>#ブレッドボード上で動かす
+<br>　CYC1000をブレッドボードに刺し、同様にＩＯを刺すだけ。これだけです。
+<br>　ＩＯは基板にしたが、ボード上で配線でもなんら問題ない。
+<br>　配線は「[基板]((https://github.com/hi631/FPGA_DOS/tree/master/max1000_eagle))」と同じなので、そちらを参照してね。
+<br><img width="400" alt="" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/159764/62417d67-14e1-505c-e907-bbd1239ce79d.jpeg">
+
+<br>#コンパクトな基板で動かす。
+<br>　ブレッドボードの配線を、CNCで切削したコンパクトな基板。それだけです。
+<br>　[eagleで作製した基板](https://github.com/hi631/FPGA_DOS/tree/master/max1000_eagle)
+<br><img width="400" alt="基板" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/159764/e5b5b6c3-f938-628c-791e-1125b193cebc.jpeg">
+
+<br>#ソフト
+<br>　ブレッドボード、基板共に同一ソフトです。
+<br>　と言っても、next186のピン配置を変えただけですが。
+<br>　[ＦＰＧＡに書き込むソフト](https://github.com/hi631/FPGA_DOS/tree/master/max1000_Next186_SoC)
+<br>　[ブートディスクのイメージ](https://github.com/hi631/FPGA_DOS/blob/master/SD2G_Dos_F.zip)
+
+<br>詳細は　「[Ｑｉｉｔａ](https://qiita.com/hi631/items/d948d38c25a411d28f2b)」を見てください。
